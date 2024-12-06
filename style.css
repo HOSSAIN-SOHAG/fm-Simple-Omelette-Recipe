@@ -1,0 +1,107 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+  }
+  
+  
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: outfit;
+    src: url(/assets/fonts/outfit/static/Outfit-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: youngserif;
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  }
+    .attribution { 
+    font-size: 15px; 
+    text-align: center;
+    margin-bottom: 5rem;
+     }
+    .attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background: var(--Stone-100);
+    font-family: "Young Serif", outfit ;
+    font-weight: 400;
+    font-style: normal;
+  }
+  img {
+    margin: 1.5rem;
+    border-radius: 1rem;
+    justify-content: center;
+  }
+  h1,h2{
+    font-family: youngserif;
+    letter-spacing: 0.05rem;
+  }
+
+  h2{
+    color:var(--Brown-800);
+  }
+  .instruction
+  p{
+    font-size: 16px;
+  }
+  img{
+    max-width: 94%;
+  }
+p,li{
+  
+  line-height: 1.6;
+  color: var(--Stone-600);
+}
+li{
+  margin-top: 0.5rem;
+}
+.container{
+  /* max-width: 900px; */
+  margin-inline: auto;
+  background-color: #fff;
+}
+.container div:not(first-child) {
+  padding: 1.5rem;}
+.heading h1{
+  color: var(--Stone-900);
+  margin-bottom: 1rem;
+}
+.heading ul li{
+  margin-left: 2rem;
+  padding-left: 1rem;
+}
+li::marker{
+  color: var(--Brown-800);
+}
+.heading article {
+  background-color: var(--Rose-50);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+}
+.heading article h3 {
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 0.5rem;
+}
+.instruction {
+  border-top: 1px solid hsl(30, 18%, 87%);
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.nutrition ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 0.5rem 0;
+}
